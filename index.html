@@ -19,12 +19,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="./assets/css/main.css" rel="stylesheet">
@@ -38,8 +39,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="./index.html" class="logo d-flex align-items-center">
-        <img src="./assets/img/favicon.png" alt="">
-        <h1>Makellos Medications</h1>
+        <img src="./assets/img/favicon.png" alt="logo" height="70px" width="120px">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Makellos Medications</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -50,6 +51,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Products</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#">Management</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -58,46 +60,60 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row gy-4 d-flex justify-content-between">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-between">
-          <h2 data-aos="fade-up">To provide a healthy lifestyle, we aspire to aid the community</h2>
-          <p data-aos="fade-up" data-aos-delay="100">We aspire to aid the community in leading a healthy life by formulating, commercializing, and delivering affordable and accessible medicines that satisfy urgent medical needs. We came into existence in 2016 and serve in many different categories</p>
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-            <!-- <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Products</p>
-              </div>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/bg1.avif)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"><span>Makellos Medications</span></h2>
+              <p class="animate__animated animate__fadeInUp">
+                We aspire to aid the community in leading a healthy life by formulating, commercializing, and delivering affordable and accessible medicines that satisfy urgent medical needs. We came into existence in 2016 and serve in many different categories
+              </p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto btn-primary">Explore</a>
             </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Team</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Customers</p>
-              </div>
-            </div> -->
-
           </div>
         </div>
 
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-          <!-- <img src="assets/img/favicon.png" class="img-fluid mb-3 mb-lg-0" alt=""> -->
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/bg3.avif)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Makellos Medications</h2>
+              <p class="animate__animated animate__fadeInUp">In pursuit of our belief, we will create an environment of innovation and learning, as we push ourselves to reach higher level of excellence.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/bg2.avif)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Makellos Medications</h2>
+              <p class="animate__animated animate__fadeInUp">We are gearing up to be future-ready and transform our culture and capability, product quality, process robustness, efficiency and productivity.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
         </div>
 
       </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
     </div>
-  </section><!-- End Hero Section -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -156,7 +172,7 @@
                 <i class="bi bi-diagram-3"></i>
                 <div>
                   <h5>Values</h5>
-                  <p>Our patients trust our medicines, and we believe that his trust must be earned every single day.</p>
+                  <p>Our patients trust our medicines, and we believe that their trust must be earned every single day.</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
@@ -170,8 +186,7 @@
                 <i class="bi bi-broadcast"></i>
                 <div>
                   <h5>Principles</h5>
-                  <p>We understand the needs of our patients and partners better than others.We solve challenges that only a few
-                    can, and do this with agility.</p>
+                  <p>We understand the needs of our patients and partners in order to exceed their expectations in service quality . We believe in alleviating pain and suffering.</p>
                 </div>
               </li>
             </ul>
@@ -247,7 +262,7 @@
           </div>
           <div class="col-md-7">
             <h3>Etilos</h3>
-            <p>Etilos is Non Narcotic & Schedule H Category Etilos is most selective & potent serotonin reuptake inhibitor.
+            <p>Etilos is most selective & potent serotonin reuptake inhibitor.
               Etilos gas bioavailability (85%), not effected by presence of food.</p>
             <ul>
               <p>Gives freedom from : </p>
@@ -293,7 +308,12 @@
             </ul>
           </div>
         </div><!-- Features Item -->
-
+        
+        
+      </div>
+      <div class="mt-5"  style="text-align: center;">
+        <a class="btn btn-primary" href="./products-list-makellos-medications.html">
+        More Products</a>
       </div>
     </section><!-- End Features Section -->
 
@@ -403,6 +423,8 @@
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/makellosmedications/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/makellosmedications/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/makellosmedications/" target="_blank" class="instagram"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.twitter.com/Makellosm/" target="_blank" class="instagram"><i class="bi bi-twitter"></i></a>
           </div>
         </div>
 
@@ -429,6 +451,7 @@
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
             <strong>Phone:</strong> +91 9761225555 <br>
+            <strong>Phone:</strong> +91 9761335555 <br>
             <strong>Email:</strong> makellosmedications@gmail.com<br>
           </p>
 
@@ -454,14 +477,14 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 
 </body>
 
