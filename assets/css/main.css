@@ -1243,18 +1243,18 @@ section {
   color: var(--color-secondary);
 }
 
-/*--------------------------------------------------------------
-# Our Team Section
---------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  margin-bottom: 20px;
   background: #fff;
-  border: 1px solid rgba(14, 29, 52, 0.15);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
 .team .member img {
-  margin: -1px -1px 30px -1px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .team .member .member-content {
@@ -1263,14 +1263,15 @@ section {
 
 .team .member h4 {
   font-weight: 700;
+  margin-top: 16px;
   margin-bottom: 2px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   color: #6c757d;
 }
 
@@ -1283,21 +1284,34 @@ section {
 
 .team .member .social {
   margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .team .member .social a {
-  color: rgba(14, 29, 52, 0.5);
+  color: #a2a2a2;
   transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
 }
 
 .team .member .social a:hover {
   color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
+
 
 /*--------------------------------------------------------------
 # Horizontal Pricing Section
